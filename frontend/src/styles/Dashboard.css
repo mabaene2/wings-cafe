@@ -1,0 +1,78 @@
+/* Dashboard.css */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+}
+
+.stat-card {
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.stat-card.warning {
+    background-color: #ffcccc;
+}
+
+.stat-number {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.product-menu {
+    margin-top: 2rem;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+}
+
+.product-info {
+    margin-top: 0.5rem;
+}
+
+.product-name {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.product-price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #007bff;
+    margin: 0.5rem 0;
+}
+
+.product-availability {
+    font-size: 0.9rem;
+    margin: 0.5rem 0;
+}
+
+.product-availability.in-stock {
+    color: #28a745;
+}
+
+.product-availability.out-of-stock {
+    color: #dc3545;
+}
